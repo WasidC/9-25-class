@@ -74,6 +74,7 @@ public class main {
 
          */
 
+        /*
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please enter your name: ");
@@ -81,6 +82,8 @@ public class main {
 
         System.out.println("Enter your age: ");
         int age = scanner.nextInt();
+
+         */
 
         /*
         if (age > 25) {
@@ -131,7 +134,66 @@ public class main {
         } else {
             System.out.println("I don't love Potatoes!");
 
-         */
+
         }
+
+         */
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of the day you want to display (0-6)");
+        int dayNumber = scanner.nextInt();
+
+        String dayName = "";
+
+        /*
+        if(dayNumber == 0) {
+            dayName = "Sunday";
+        } else if (dayNumber == 1) {
+            dayName = "Monday";
+        } else if(dayNumber == 2) {
+            dayName = "Tuesday";
+        } else if (dayNumber == 3) {
+            dayName = "Wednesday";
+        } else if(dayNumber == 4) {
+            dayName = "Thursday";
+        } else if (dayNumber == 5) {
+            dayName = "Friday";
+        } else if(dayNumber == 6) {
+            dayName = "Saturday";
+        } else if (dayNumber == 7) {
+            dayName = "Sunday";
+        } else {
+            System.out.println("Invalid Input!");
+            return;
+
+         */
+
+        switch (dayNumber) {
+            case 0:
+                dayName = "Sunday";
+                break;
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            default:
+                System.out.println("Invalid Input: ");
+                return;
+        }
+        System.out.println("The name of the day chosen is: " + dayName);
     }
 }
